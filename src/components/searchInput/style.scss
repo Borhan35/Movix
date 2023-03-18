@@ -1,0 +1,37 @@
+@import "../../mixins.scss";
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  input {
+    width: calc(100% - 100px);
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px 0 0 30px;
+    padding: 0px 15px;
+    background-color: white;
+    font-size: 18px;
+    @include md {
+      padding: 0px 30px;
+      height: 60px;
+      font-size: 24px;
+    }
+  }
+  button {
+    background: var(--gradient);
+    outline: 0;
+    border: 0;
+    height: 50px;
+    width: 100px;
+    border-radius: 0 30px 30px 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    @include md {
+      font-size: 18px;
+      height: 60px;
+    }
+  }
+}
